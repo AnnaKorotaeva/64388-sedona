@@ -9,28 +9,29 @@
 </head>
 
 <body>
+<div class="main-container">
+  <header class="main-header">
 
-     <header class="main-header">
+      <nav class="main-nav--closed"></nav>
+      <nav class="main-nav">
+          <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#">Информация</a>
+              </li>
+              <li class="main-nav__item"><a href="#">Оставить отзыв</a>
+              </li>
+              <li class="main-nav__item"><a href="#">Блог шерифа</a>
+              </li>
+              <li class="main-nav__item"><a href="#">Гостиницы</a>
+              </li>
+          </ul>
+      </nav>
+<div class="main-header__bottom">
+<div class="main-header__logo"><a href="#"></a></div>
+<div class="main-header__fold"><a href="#"></a></div>
 
-         <nav class="main-nav--closed"></nav>
-         <nav class="main-nav">
-             <ul class="main-nav__list">
-                 <li class="main-nav__item"><a href="#">Информация</a>
-                 </li>
-                 <li class="main-nav__item"><a href="#">Оставить отзыв</a>
-                 </li>
-                 <li class="main-nav__item"><a href="#">Блог шерифа</a>
-                 </li>
-                 <li class="main-nav__item"><a href="#">Гостиницы</a>
-                 </li>
-             </ul>
-         </nav>
- <div class="main-header__bottom">
-   <div class="main-header__logo"><a href="#"></a></div>
-   <div class="main-header__fold"><a href="#"></a></div>
- </div>
+</div>
 
-     </header>
+  </header>
 
 
     <div class="main-container">
@@ -45,22 +46,22 @@
 
         <div class="form">
           <form action="/echo" class="feedback" enctype="multipart/form-data">
-            <fieldset>
+            <fieldset class="user-info">
             <h2>Представьтесь, пожалуйста:</h2>
 
-            <label for="surname" class="align-left">Фамилия:</label>
+            <label for="surname" class="align-left">Фамилия:
             <input type="text" id="surname" name="user_surname" class="feedback__input--gray"
-            placeholder="Иванов">
-            <label for="name" class="align-left">Имя:</label>
+            placeholder="Иванов"></label>
+            <label for="name" class="align-left">Имя:
             <input type="text" id="name" name="user_name" class="feedback__input--gray"
-            placeholder="Петр">
-            <label for="partonymic" class="align-left">Отчество:</label>
+            placeholder="Петр"></label>
+            <label for="partonymic" class="align-left">Отчество:
             <input type="text" id="partonymic" name="patronymic" class="feedback__input--gray"
-            placeholder="Александрович">
+            placeholder="Александрович"></label>
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="impression">
             <h2>Ваше общее впечатление:</h2>
             <input type="radio" id="positive" name="positive" class="feedback__input"
             checked>
@@ -70,7 +71,7 @@
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="travel-date">
             <h2">Даты вашей поездки:</h2>
             <label for="checkin_date">Дата приезда:</label>
             <input type="date" id="checkin_date" name="arrival_date" class="feedback__input--gray">
@@ -80,7 +81,7 @@
             <input type="date" id="checkout_date" name="leave_date" class="feedback__input--gray">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="amount">
             <h2>Кол-во путешественников:</h2>
             <label for="personcount">Количество путешественников:</label>
             <input type="number" id="personcount" class="feedback__input"
@@ -95,7 +96,7 @@
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="sites">
             <h2>Посещенные достопримечательности:</h2>
             <input type="checkbox" id="" class="feedback__input" checked>
             <label for="">Мост Дьявола</label>
@@ -120,21 +121,22 @@
         </div>
 
         <footer class="main-footer">
-            <div class="container clearfix">
+
                 <section class="footer-hashtag">
                     <h2>#visitsedona</h2>
                 </section>
                 <section class="footer-social">
-                    <a href="#"><div class="btn btn__twitter"></div></a>
-                    <a href="#"><div class="btn btn__facebook"></div></a>
-                    <a href="#"><div class="btn btn__youtube"></div></a>
+                    <a href="#"><div class="btn-social btn-social__twitter"></div></a>
+                    <a href="#"><div class="btn-social btn-social__facebook"></div></a>
+                    <a href="#"><div class="btn-social btn-social__youtube"></div></a>
                 </section>
                 <section class="footer-copyright">
                     <p class="footer-copyright__text">Разработано</p>
                     <img src="img/logo_copyright_mob.png" alt="htmlacademy.ru" class="footer-copyright__image">
                 </section>
-            </div>
+
         </footer>
+        </div>
 </body>
 
 </html>
