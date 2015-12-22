@@ -1,0 +1,109 @@
+.font-size() {
+    font-size: @font-size;
+}
+.block-reason {
+    background-color: @color-blue;
+}
+/*треугольник
+.content-heading {
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+    content: '';
+    position: absolute;
+    }  */
+
+@media (min-width: 320px) and (max-width:767px) {
+
+  .main-logo {
+      background:
+                  url("../img/text-welcome.svg") no-repeat center 50px,
+                  url("../img/text-tothegorgeous.svg") no-repeat center 100px,
+                  url("../img/text-sedona.svg") no-repeat center,
+                  url("../img/text-becausecanyon.svg") no-repeat center 290px,
+                  url("../img/photo-background@1x.jpg") no-repeat;
+
+      height: 390px;
+    }
+.content-wrapper {
+    padding: 30px 7%;
+}
+.blue {
+  display: flex;
+  flex-direction: column;
+}
+.block-reason__image {
+  background: url("../img/photo-city@1x.jpg") no-repeat;
+  width: 100%;
+}
+.block-icon {
+    text-align: left;
+    margin-bottom: 40px;
+    padding-left: 65px;
+}
+.block-text {
+    background-color: @gray-background;
+    position: relative;
+    margin-bottom: 30px;
+}
+.description-item {
+    padding-bottom: 30px;
+    position: relative;
+    &:first-child {
+        padding-top: 30px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        outline: 1px solid #d6d6d6;
+        bottom: 0;
+        left: 20px;
+        right: 20px;
+    }
+    &:last-child:after {
+        outline: none;
+    }
+}
+}
+
+@media (min-width: 768px) {
+
+.main-logo {
+    background: url("../img/logo-white.png") no-repeat center 463px,
+                url("../img/text-welcome.svg") no-repeat center 75px,
+                url("../img/text-tothegorgeous.svg") no-repeat center 130px,
+                url("../img/text-sedona.svg") no-repeat center,
+                url("../img/text-becausecanyon.svg") no-repeat center 340px,
+                url("../img/photo-background@1x.jpg") no-repeat;
+
+    width: 100%;
+    height: 500px;
+  }
+  .blue {
+    display: flex;
+    color: #ffffff;
+  }
+.block-reason {
+  width: 35%;
+}
+.icon, .block-reason {
+  display: flex;
+}
+.block-icon, .description-item {
+  padding: 5%;
+}
+  .content-wrapper {
+      padding: 30px 5%;
+  }
+  .block-text {
+      background-color: @gray-background;
+      display: flex;
+    }
+    .block-reason__image {
+      background: url("../img/photo-bridge@1x.jpg") no-repeat;
+      width: 65%;
+      &:last-child {
+        background: url("../img/photo-city@1x.jpg") no-repeat;
+      }
+    }
+  }

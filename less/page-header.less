@@ -1,18 +1,44 @@
-@media (max-width: 380px) {
+@media (min-width: 320px) and (max-width:767px){
 
 .main-nav {
     background-color: @color-blue;
+    margin-bottom: 55px;
 }
-.main-nav__list {
+.main-nav__bottom {
+  position: relative;
+  &::after {
+    content: '';
+    position:absolute;
+    bottom:15px;
+    right:20px;
+    width: 22px;
+    height: 22px;
+    background: url("../img/icon-menu.svg") no-repeat;
+  }
+}
+.main-nav__logo {
+  position: relative;
+  &::before {
+    content: '';
+    position:absolute;
+    top:0;
+    left:40%;
+    width: 136px;
+    height: 72px;
+    background:url("../img/logo-sedona@1x.png") no-repeat,
+                url("..img/form-logo-triangle.svg") no-repeat;
+  }
+}
+.main-nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+
     li {
         border-bottom: 1px solid #9ac2db;
         font-weight: bold;
         padding: 11px;
         .font-nav();
-
     }
     a {
         color: #fff;
@@ -25,10 +51,6 @@
         content: '';
     }
 }
-.main-header__bottom {
-  position: relative;
-  height: 55px;
-}
 .main-header__logo::before {
   content: '';
   position:absolute;
@@ -38,22 +60,22 @@
   height: 70px;
   background: url("../img/nav_icon.png") no-repeat;
 }
-.main-header__fold::after {
+.main-header ul::after {
   content: '';
   position:absolute;
   top:15px;
   right:20px;
-  width: 20px;
+  width: 22px;
   height: 22px;
-  background: url("../img/main_nav.png") no-repeat;
+  background: url("../img/icon-cross.svg") no-repeat;
 }
 }
 
 
 
-@media (max-width: 800px) and (min-width: 381px) {
+@media (min-width: 768px)  {
 .main-nav ul {
-  padding: 0;
+  padding: 0 5%;
   margin: 0;
   position: relative;
   &::after {
@@ -62,34 +84,25 @@
     height: 72px;
     content: '';
     top:0;
-    left: 315px;
-    background: url("../img/nav_icon.png") no-repeat center;
+    left:47%;
+    text-align: center;
+    background: url("../img/logo-sedona@1x.png") no-repeat,
+                url("..img/form-logo-triangle.svg") no-repeat;
   }
 }
   .main-nav__list {
-
       list-style: none;
+      display: flex;
+      justify-content: space-between;
       li {
           font-weight: bold;
-          display: inline-block;
-          vertical-align: top;
-          padding: 20px;
-
+          padding: 20px 0;
           .font-nav-tab();
-          &:nth-child(2) {
-            padding-right: 200px;
           }
-          }
-
       a {
           color: #000;
-
           text-decoration: none;
           text-align: center;
-      }
-      a::before {
-          border-bottom: 1px solid #678fa8;
-          content: '';
       }
   }
 }
