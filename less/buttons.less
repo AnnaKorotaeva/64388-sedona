@@ -17,7 +17,21 @@ height: 45px;
     background: @color-blue url("../img/icon-youtube.svg")no-repeat center;
 }
 }
-
+.btn-nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 40px;
+    padding-top: 20px;
+    color: #fff;
+    background-color: @color-blue;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
 @media (min-width: 320px) {
 .btn {
     display: inline-block;
@@ -25,7 +39,6 @@ height: 45px;
     padding: 15px 15px;
     color: #fff;
     background-color: @color-blue;
-    .font-btn();
     text-decoration: none;
     text-align: center;
     border: none;
@@ -41,14 +54,13 @@ height: 45px;
 
 }
 
-@media (max-width: 1199px) and (min-width: 768px) {
+@media (min-width: 768px) {
 .btn {
     display: inline-block;
     vertical-align: top;
     padding: 15px 15px;
     color: #fff;
     background-color: @color-blue;
-    .font-btn();
     text-decoration: none;
     text-align: center;
     border: none;
@@ -57,20 +69,4 @@ height: 45px;
     cursor: pointer;
 }
 
-}
-@media (min-width: 1200px) {
-  .btn {
-      display: inline-block;
-      vertical-align: top;
-      padding: 15px 15px;
-      color: #fff;
-      background-color: @color-blue;
-      .font-btn();
-      text-decoration: none;
-      text-align: center;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      width: 40%;
-  }
 }

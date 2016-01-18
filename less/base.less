@@ -1,12 +1,15 @@
 body {
-    .font-text();
+    font-family: 'PT Sans',sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
     text-align: center;
     padding: 0;
     margin: 0;
     width: 100%;
 }
 h2 {
-  .font-title();
+   font-size: 18px;
 }
 img {
   max-width: 100%;
@@ -15,7 +18,8 @@ img {
 fieldset {
   border: none;
 }
-@media (max-width: 320px) {
+
+@media (min-width: 320px) {
 input {
   display: block;
   border: none;
@@ -24,17 +28,5 @@ input {
   margin: 15px;
   padding: 20px;
 }
-}
 
-@media (max-width: 768px) and (min-width: 321px) {
-
-input {
-  border: none;
-  margin: 0 auto;
-  padding: 20px;
-}
-label {
-  display: flex;
-  flex-direction: row;
-}
 }

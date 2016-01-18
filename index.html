@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
@@ -38,7 +37,7 @@
 
     <div class="main-content">
         <div class="main-logo">
-
+<div class="main-logo__text"></div>
         </div>
 
         <div class="content-heading">
@@ -133,11 +132,7 @@
 <a href="#" class="btn">Найти гостиницу</a>
 
 </div>
-
-        <div class="map">
-          <img src="#" alt="map">
-        </div>
-
+<div id="map" style="width: 100%; height: 300px"></div>
     </div>
 
     <footer class="main-footer">
@@ -158,5 +153,15 @@
     </footer>
 
 </body>
-
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript">
+  var myMap;
+  ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+  function init () {
+    myMap = new ymaps.Map("map", {
+      center: [55.76, 37.64], // Координаты центра карты
+      zoom: 10 // Zoom
+    });
+  }
+</script>
 </html>
