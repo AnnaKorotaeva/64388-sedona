@@ -1,0 +1,113 @@
+@media (min-width: 320px) and (max-width:767px){
+
+.main-nav {
+    background-color: @color-blue;
+
+
+}
+.main-nav__bottom {
+  position: relative;
+  height: 55px;
+
+  &::after {
+    content: '';
+    position:absolute;
+    bottom:15px;
+    right:20px;
+    width: 22px;
+    height: 22px;
+    background: url("../img/icon-menu.svg") no-repeat;
+  }
+  &::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left:35%;
+    width: 136px;
+    height: 72px;
+    background:url("../img/logo-sedona@1x.png") no-repeat center,
+                url("../img/form-logo-triangle.svg") no-repeat center;
+  }
+}
+.main-nav__logo {
+  position: relative;
+
+}
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        border-bottom: 1px solid #9ac2db;
+        font-weight: bold;
+        padding: 11px;
+    }
+    a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+    }
+    a::before {
+        border-bottom: 1px solid #678fa8;
+        content: '';
+    }
+}
+.main-header__logo::before {
+  content: '';
+  position:absolute;
+  top:0;
+  left:90px;
+  width: 135px;
+  height: 70px;
+  background: url("../img/nav_icon.png") no-repeat;
+}
+.main-header ul::after {
+  content: '';
+  position:absolute;
+  top:15px;
+  right:20px;
+  width: 22px;
+  height: 22px;
+  background: url("../img/icon-cross.svg") no-repeat;
+}
+}
+
+
+
+@media (min-width: 768px)  {
+.main-nav ul {
+  padding: 0 5%;
+  margin: 0;
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  &::before {
+    position: absolute;
+    width: 137px;
+    height: 72px;
+    content: '';
+    top:0;
+    left:45%;
+    background: url("../img/logo-sedona@1x.png") no-repeat center,
+                url("../img/form-logo-triangle.svg") no-repeat center;
+  }
+}
+  .main-nav__list {
+      li {
+          font-weight: bold;
+          padding: 18px 3%;
+          &:nth-child(2) {
+            padding-right: 25%;
+          }
+          }
+      a {
+          color: #000;
+          text-decoration: none;
+          text-align: center;
+      }
+  }
+}
